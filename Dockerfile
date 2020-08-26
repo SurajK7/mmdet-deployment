@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y git ninja-build libglib2.0-0 libsm6 lib
 
 RUN pip install --upgrade pip
 # Install MMCV
-RUN pip install mmcv-full==latest+torch1.5.0+cu101 -f https://openmmlab.oss-accelerate.aliyuncs.com/mmcv/dist/index.html
+RUN pip install mmcv-full==1.0.5+torch1.5.0+cu101 -f https://openmmlab.oss-accelerate.aliyuncs.com/mmcv/dist/index.html
 
 # Install MMDetection
 RUN conda clean --all
