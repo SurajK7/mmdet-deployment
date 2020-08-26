@@ -7,6 +7,7 @@ from io import BytesIO
 from pathlib import Path
 import base64
 from mmdet.apis import inference_detector, init_detector, show_result_pyplot
+import sys
 
 path = Path(__file__).parent
 
@@ -17,7 +18,7 @@ app.mount('/tmp', StaticFiles(directory='/tmp'))
 
 async def setup_detector():
     # build the model from a config file and a checkpoint file
-    model = init_detector('/mmdetection/configs/rsna/retinanet_r101_fpn_rsna.py', '/mmdetection/checkpoints/rsna.pth', device='cuda:0')
+    model = init_detector('/mmdetection/configs/rsna/retinanet_r101_fpn_rsna.py', '/mmdetection/checkpoints/rsna.pth', device='cpu')
     return model
 
 loop = asyncio.get_event_loop()
