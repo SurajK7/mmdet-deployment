@@ -8,6 +8,9 @@ from pathlib import Path
 import base64
 from mmdet.apis import inference_detector, init_detector, show_result_pyplot
 import sys
+import numpy
+from PIL import Image
+import imutils
 
 path = Path(__file__).parent
 
@@ -23,7 +26,7 @@ async def setup_detector():
 
 loop = asyncio.get_event_loop()
 tasks = [asyncio.ensure_future(setup_detector())]
-learn = loop.run_until_complete(asyncio.gather(*tasks))[0]
+model = loop.run_until_complete(asyncio.gather(*tasks))[0]
 loop.close()
 
 @app.route("/upload", methods=["POST"])
@@ -34,15 +37,17 @@ async def upload(request):
     return predict_from_bytes(img_bytes)
 
 def predict_from_bytes(bytes):
+    image = numpy.array(Image.open(BytesIO(bytes)).convert('RGB')) 
+    image = imutils.resize(image, width=512)
+
     # test a single image
-    result = inference_detector(model, BytesIO(bytes))
+    result = inference_detector(model, image)
     # show the results
-    show_result_pyplot(model, BytesIO(bytes), result, score_thr=0.0, out_file='/tmp/out_file.png')
-   
-    result_html1 = path/'static'/'result1.html'
-    result_html2 = path/'static'/'result2.html'
+    model.show_result(image, result, score_thr=0.05, out_file='/tmp/out_file.png')
+
+    result_html = path/'static'/'result.html'
     
-    result_html = str(result_html1.open().read() +rs + result_html2.open().read())
+    result_html = str(result_html.open().read())
     return HTMLResponse(result_html)
 
 @app.route("/")

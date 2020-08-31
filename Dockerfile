@@ -1,8 +1,4 @@
-ARG PYTORCH="1.5"
-ARG CUDA="10.1"
-ARG CUDNN="7"
-
-FROM pytorch/pytorch:${PYTORCH}-cuda${CUDA}-cudnn${CUDNN}-devel
+FROM pytorch/pytorch:1.5-cuda10.1-cudnn7-devel
 
 ENV TORCH_CUDA_ARCH_LIST="6.0 6.1 7.0+PTX"
 ENV TORCH_NVCC_FLAGS="-Xfatbin -compress-all"
@@ -22,7 +18,6 @@ RUN git clone https://github.com/SurajK7/pneumonia-detection.git /mmdetection
 WORKDIR /mmdetection
 
 COPY requirements.txt .
-
 
 RUN pip install --no-cache-dir -r requirements.txt --upgrade
 

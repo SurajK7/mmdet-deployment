@@ -1,5 +1,5 @@
 <head>
-	<title>CXR Pathology Detection</title>
+	<title>Pneumonia Detection</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,8 +30,7 @@
 	<div class="container-contact100">
 		<div class="wrap-contact100">
 			<a href="/"><img height="42" width="42" src="static/images/25694.png"></a>
-			<span class="contact100-form-title">Diagnose Chest X-Rays with Consolidation, Edema or/and Pleural
-				Effusion</span>
+			<span class="contact100-form-title">Diagnose Chest X-Rays with Pneumonia</span>
 			<form class="contact100-form validate-form" action="/upload" method="post" enctype="multipart/form-data">
 				<div class="wrap-input100 validate-input" data-validate="Valid image file is required: jpg or png">
 					<span class="label-input100">Select Only One Image File</span>
@@ -57,78 +56,6 @@
 			</form>
 		</div>
 	</div>
-	<div class="limiter">
-		<div class="container-table100">
-			<div class="wrap-table100">
-				<div class="table100 ver1 m-b-110">
-					<div class="table100-head">
-						<table>
-							<thead>
-								<tr class="row100 head">
-									<th class="cell100 column1" style="text-align: center; vertical-align: middle;">
-										Condition</th>
-									<!-- <th class="cell100 column2" style="text-align: center; vertical-align: middle;">Threshold</th> -->
-									<th class="cell100 column3" style="text-align: center; vertical-align: middle;">
-										Sensitivity</th>
-									<th class="cell100 column4" style="text-align: center; vertical-align: middle;">
-										Specificity</th>
-									<th class="cell100 column5" style="text-align: center; vertical-align: middle;">
-										Youden Index</th>
-								</tr>
-							</thead>
-						</table>
-					</div>
-
-					<div class="table100-body js-pscroll">
-						<table>
-							<tbody>
-								<tr class="row100 body">
-									<td class="cell100 column1" style="text-align: center; vertical-align: middle;">
-										Pleural Effusion</td>
-									<!-- <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.525</td> -->
-									<td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.86
-									</td>
-									<td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.88
-									</td>
-									<td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.74
-									</td>
-								</tr>
-
-								<tr class="row100 body">
-									<td class="cell100 column1" style="text-align: center; vertical-align: middle;">
-										Consolidation</td>
-									<!-- <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.075</td> -->
-									<td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.91
-									</td>
-									<td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.87
-									</td>
-									<td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.78
-									</td>
-								</tr>
-
-								<tr class="row100 body">
-									<td class="cell100 column1" style="text-align: center; vertical-align: middle;">
-										Edema</td>
-									<!-- <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.34</td> -->
-									<td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.93
-									</td>
-									<td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.86
-									</td>
-									<td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.79
-									</td>
-								</tr>
-
-
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="images">
-			<img class='curves' border="0" src="static/images/precision_recall_curve.png">
-			<img class='curves' border="0" src="static/images/rocauc.png">
-		</div>
 		<script src="static/js/utility.js"></script>
 </body>
 
