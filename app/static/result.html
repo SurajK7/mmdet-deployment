@@ -24,6 +24,8 @@
     <link rel="stylesheet" type="text/css" href="static/css/util.css">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
 <!--===============================================================================================-->
+    <link rel='stylesheet' href='static/css/style.css'>
+    
 </head>
 <body>
     <div class="container-contact100">
@@ -36,7 +38,87 @@
                 </div>
               </div>
         </div>
+        <div class="limiter">
+            <div class="container-table100">
+                <div class="wrap-table100">
+                    <div class="table100 ver1 m-b-110">
+                        <div class="table100-head">
+                            <table>
+                                <thead>
+                                    <tr class="row100 head">
+                                        <th class="cell100 column1" style="text-align: center; vertical-align: middle;">
+                                            Threshold</th>
+                                        <!-- <th class="cell100 column2" style="text-align: center; vertical-align: middle;">Threshold</th> -->
+                                        <th class="cell100 column3" style="text-align: center; vertical-align: middle;">
+                                            Sensitivity</th>
+                                        <th class="cell100 column4" style="text-align: center; vertical-align: middle;">
+                                            Specificity</th>
+                                        <th class="cell100 column5" style="text-align: center; vertical-align: middle;">
+                                            Youden Index</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+    
+                        <div class="table100-body js-pscroll">
+                            <table>
+                                <tbody>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1" style="text-align: center; vertical-align: middle;">
+                                            0.10</td>
+                                        <!-- <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.525</td> -->
+                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.9858
+                                        </td>
+                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.5316
+                                        </td>
+                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.5175
+                                        </td>
+                                    </tr>
+    
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1" style="text-align: center; vertical-align: middle;">
+                                            0.13</td>
+                                        <!-- <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.075</td> -->
+                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.9518
+                                        </td>
+                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.6908
+                                        </td>
+                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.6427
+                                        </td>
+                                    </tr>
+    
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1" style="text-align: center; vertical-align: middle;">
+                                            0.16</td>
+                                        <!-- <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.34</td> -->
+                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.8980
+                                        </td>
+                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.7666
+                                        </td>
+                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.6646
+                                        </td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1" style="text-align: center; vertical-align: middle;">
+                                            0.20</td>
+                                        <!-- <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.34</td> -->
+                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.8073
+                                        </td>
+                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.8701
+                                        </td>
+                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.6775
+                                        </td>
+                                    </tr>    
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="images">
+                <img class='curves' border="0" src="static/images/roc.png">
+            </div>
     </div>
-    <script src="static/js/show_result.js"></script>
 </body>
 </html>
