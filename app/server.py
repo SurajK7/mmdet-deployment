@@ -38,7 +38,7 @@ async def upload(request):
 
 def predict_from_bytes(bytes):
     image = numpy.array(Image.open(BytesIO(bytes)).convert('RGB')) 
-    image = imutils.resize(image, width=512)
+    image = imutils.resize(image, width=1024)
 
     # test a single image
     result = inference_detector(model, image)
