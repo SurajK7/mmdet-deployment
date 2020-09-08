@@ -35,9 +35,12 @@
             <div class="row">
                 <div class="column">
                   <img src="/tmp/out_file.png" alt="Snow" style="width:100%">
+                  <p>lo: lung opacity</p>
                 </div>
               </div>
         </div>
+        <p>The model was evaluated on the Stage 1 test set containing of 1000 X-rays from RSNA pneumonia detection challenge; the models scores aucroc of 0.92.</p>
+        <p>Following are the metrics for different score thresholds on the test set.</p>
         <div class="limiter">
             <div class="container-table100">
                 <div class="wrap-table100">
@@ -167,6 +170,14 @@
                             
                                 </tbody>
                             </table>
+                            <p>Senstivity=tp/(tp+fn)</p>
+                            <p>Precision_positive=tp/(tp+fp)</p>
+                            <p>Specificity=tn/(tn+fp)</p>
+                            <p>Precision_negative=tn/(tn+fn)</p>
+                            <p>Here, tp: True Positive</p>
+                            <p>fp: False Positive</p>
+                            <p>tn: True Negative</p>
+                            <p>fn: False Negative</p>
                         </div>
                     </div>
                 </div>

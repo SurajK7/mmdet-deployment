@@ -43,7 +43,7 @@ def predict_from_bytes(bytes):
     # test a single image
     result = inference_detector(model, image)
     # show the results
-    model.show_result(image, result, score_thr=0.05, out_file='/tmp/out_file.png', thickness=2, font_scale=2)
+    model.show_result(image, result, score_thr=0.05, out_file='/tmp/out_file.png', thickness=2, font_scale=1)
 
     result_html = path/'static'/'result.html'
     
