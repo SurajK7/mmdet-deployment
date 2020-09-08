@@ -48,13 +48,16 @@
                                     <tr class="row100 head">
                                         <th class="cell100 column1" style="text-align: center; vertical-align: middle;">
                                             Threshold</th>
-                                        <!-- <th class="cell100 column2" style="text-align: center; vertical-align: middle;">Threshold</th> -->
-                                        <th class="cell100 column3" style="text-align: center; vertical-align: middle;">
+                                        <th class="cell100 column2" style="text-align: center; vertical-align: middle;">
                                             Sensitivity</th>
+                                        <th class="cell100 column3" style="text-align: center; vertical-align: middle;">
+                                            Precision positive class</th>
                                         <th class="cell100 column4" style="text-align: center; vertical-align: middle;">
                                             Specificity</th>
                                         <th class="cell100 column5" style="text-align: center; vertical-align: middle;">
-                                            Youden Index</th>
+                                            Precision negative class</th>
+                                        <!-- <th class="cell100 column6" style="text-align: center; vertical-align: middle;">
+                                            Youden Index</th> -->
                                     </tr>
                                 </thead>
                             </table>
@@ -65,51 +68,103 @@
                                 <tbody>
                                     <tr class="row100 body">
                                         <td class="cell100 column1" style="text-align: center; vertical-align: middle;">
+                                            0.05</td>
+                                        <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.997167
+                                        </td>
+                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.388950
+                                        </td>
+                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.145286
+                                        </td>
+                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.989474
+                                        </td>
+                                    </tr>
+    
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1" style="text-align: center; vertical-align: middle;">
                                             0.10</td>
-                                        <!-- <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.525</td> -->
-                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.9858
+                                        <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.985836	
                                         </td>
-                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.5316
+                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.534562
                                         </td>
-                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.5175
+                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.531685
                                         </td>
-                                    </tr>
-    
-                                    <tr class="row100 body">
-                                        <td class="cell100 column1" style="text-align: center; vertical-align: middle;">
-                                            0.13</td>
-                                        <!-- <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.075</td> -->
-                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.9518
-                                        </td>
-                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.6908
-                                        </td>
-                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.6427
+                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.985673
                                         </td>
                                     </tr>
     
                                     <tr class="row100 body">
                                         <td class="cell100 column1" style="text-align: center; vertical-align: middle;">
-                                            0.16</td>
-                                        <!-- <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.34</td> -->
-                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.8980
+                                            0.15</td>
+                                        <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.923513
                                         </td>
-                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.7666
+                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.662602
                                         </td>
-                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.6646
+                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.743431
+                                        </td>
+                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.946850
                                         </td>
                                     </tr>
                                     <tr class="row100 body">
                                         <td class="cell100 column1" style="text-align: center; vertical-align: middle;">
                                             0.20</td>
-                                        <!-- <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.34</td> -->
-                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.8073
+                                        <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.807365
                                         </td>
-                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.8701
+                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.772358
                                         </td>
-                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.6775
+                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.870170
+                                        </td>
+                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.892235
                                         </td>
                                     </tr>    
-
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1" style="text-align: center; vertical-align: middle;">
+                                            0.25</td>
+                                        <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.623229
+                                        </td>
+                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.862745
+                                        </td>
+                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.945904
+                                        </td>
+                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.821477
+                                        </td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1" style="text-align: center; vertical-align: middle;">
+                                            0.30</td>
+                                        <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.436261
+                                        </td>
+                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.905882
+                                        </td>
+                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.975270
+                                        </td>
+                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.760241
+                                        </td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1" style="text-align: center; vertical-align: middle;">
+                                            0.35</td>
+                                        <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.294618
+                                        </td>
+                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.936937	
+                                        </td>
+                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.989181
+                                        </td>
+                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.719910
+                                        </td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1" style="text-align: center; vertical-align: middle;">
+                                            0.40</td>
+                                        <td class="cell100 column2" style="text-align: center; vertical-align: middle;">0.186969
+                                        </td>
+                                        <td class="cell100 column3" style="text-align: center; vertical-align: middle;">0.970588	
+                                        </td>
+                                        <td class="cell100 column4" style="text-align: center; vertical-align: middle;">0.996909	
+                                        </td>
+                                        <td class="cell100 column5" style="text-align: center; vertical-align: middle;">0.692060
+                                        </td>
+                                    </tr>
+                            
                                 </tbody>
                             </table>
                         </div>
